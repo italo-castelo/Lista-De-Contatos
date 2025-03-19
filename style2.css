@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #222831;
+  margin: 0;
+  padding: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-title {
+  color: #00ADB5;
+  margin: 0;
+}
+
+.list {
+  width: 90%;
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  flex-basis: 280px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #393E46;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.list-item__imagem img {
+  border-radius: 50%;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.list-item__content {
+  padding: 16px;
+}
+
+.list-item__name {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #00ADB5;
+}
+
+.list-item__email {
+  margin: 5px 0 0;
+  color: #aaa;
+}
+
+.list-item__action {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list-item:hover .list-item__action {
+  opacity: 1;
+}
+
+.card {
+  background-color: #00ADB5;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.card a {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  background-color: #028a91;
+  transform: translateY(-2px);
+}
